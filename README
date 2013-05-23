@@ -1,0 +1,4 @@
+The two CUDA programs are compiled with common.mk, which one to compiled as well as the compiler options are specified in Makefile. The C program is compiled with the following command:
+gcc -o bin/darwin/release/ss -lm -Wall -framework GLUT -framework OpenGL ss.c
+All of the programs take two arguments the size of N, for the width and height of the world and the square root of the number of agents (the world always starts full) and the number of steps to run. The programs output the time in seconds of each step.
+The pinning code should will only run on CUDA compute capacity of 1.3 and higher.
